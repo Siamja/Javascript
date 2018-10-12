@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
+
 <body>
-<script>
+    <button onclick="affiche()">appuie lol mdr</button>
+    <script>
+        let userChoice = prompt("Choisissez 1, 2 ou 3 svp ");
+        switch (parseInt (userChoice)) {
+            case 1:
+            alert("1.Merci");
+            break;
+
+            case 2:
+            alert("2.Bonjour");
+            break;
+
+            case 3:
+            alert("3.Au revoir");
+            break;
+
+            default:
+            alert("Pardon, que voulez-vous?");
+        }
 
 
-</script>
+    </script>
 </body>
+
 </html>
