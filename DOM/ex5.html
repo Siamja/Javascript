@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercice 5</title>
+</head>
+
+<body>
+
+    <img onmouseover="change()" src="images2/image1.jpg" id="image1" />
+    <img onmouseover="change2()" src="images2/image2.jpg" id="image2" />
+    <img onmouseover="change3()" src="images2/image3.jpg" id="image3" />
+    <img onmouseover="change4()" src="images2/image4.jpg" id="image4" />
+    <img onmouseover="change5()" src="images2/image5.jpg" id="image5" />
+
+    <script>
+
+        let change = () => {
+            let image = document.querySelector("#image1");
+            image.src = "images2/image1_2.jpg";
+        }
+
+        let change2 = () => {
+            let image = document.querySelector("#image2");
+            image.src = "images2/image2_2.jpg";
+        }
+
+        let change3 = () => {
+            let image = document.querySelector("#image3");
+            image.src = "images2/image3_2.jpg";
+        }
+
+        let change4 = () => {
+            let image = document.querySelector("#image4");
+            image.src = "images2/image4_2.jpg";
+        }
+
+        let change5 = () => {
+            let image = document.querySelector("#image5");
+            image.src = "images2/image5_2.jpg";
+        }
+
+    </script>
+
+</body>
+
+</html>
