@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercice 1</title>
+    <style>
+        .border {
+            border: solid red 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <img onmouseover="addBorder()" onmouseout="removeBorder()" src="images1/image1.jpg" id="image1" />
+    <script>
+
+        let addBorder = () => {
+            document.querySelector("#image1").classList.add("border");
+
+        }
+
+        let removeBorder = () => {
+            document.querySelector("#image1").classList.remove("border");
+        }
+    </script>
+</body>
+
+</html>
