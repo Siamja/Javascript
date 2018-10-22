@@ -2,14 +2,14 @@
     float: left;
     width: 100px;
     height: 100px;
-    margin : 5px;
+    margin : 15px;
     }
     .green{
-    background-color: green;
+    color: green;
     }
     .red{
-    background-color: red;
+    color: red;
     }
     .blue{
-    background-color: blue;
+    color: blue;
     }
