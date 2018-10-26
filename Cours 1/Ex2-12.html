@@ -1,14 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Document</title>
-</head>
-<body>
-<script>
 
-</script>
-</body>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Exercice 12</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+
+        <button id="calcul" name="calcul" onclick="conversionTemperature();">Start</button>
+        <ul>
+            <li>0 - Fin du programme</li>
+            <li>1 - De Celsius vers Fahrenheit</li>
+            <li>2 - De Celsius vers Kelvin</li>
+            <li>3 - De Fahrenheit vers Celsius</li>
+            <li>4 - De Fahrenheit vers Kelvin</li>
+            <li>5 - De Kelvin vers Celsius</li>
+            <li>6 - De Kelvin vers Fahrenheit</li>
+        </ul>
+        <hr><p>Exercice 12</p>
+            <label for="celsius">Celsius : </label><input type="number" id="1" name="celsius" oninput="calcul2(this.value, this.id)" onchange="calcul2(this.value, this.id)"/><br/>
+            <label for="fahrenheit">Fahrenheit : </label><input type="number" id="2" name="fahrenheit" oninput="calcul2(this.value, this.id)" onchange="calcul2(this.value, this.id)"/><br/>
+            <label for="kelvin">Kelvin : </label><input type="number" id="3" name="kelvin" oninput="calcul2(this.value, this.id)" onchange="calcul2(this.value, this.id)"/><br/>
+
+            <script>
+            function calcul(val, type) {
+    if (type == 1)
+        return Math.round(((val*1.8)+32)*100)/100 // Ou var.toFixed(2);
+    else if (type == 2)
+        return Math.round((val+273.15)*100)/100
+    else if (type == 3)
+        return Math.round(((val-32)/1.8)*100)/100
+    else if (type == 4)
+        return Math.round((((val-32)/1.8)+273.15)*100)/100
+    else if (type == 5)
+        return Math.round((val-273.15)*100)/100
+    else if (type == 6)
+        return Math.round((((val-273.15)*1.8)+32)*100)/100
+}
+
+function calcul2(val, type) {
+    val = parseFloat(val);
+    type = parseFloat(type);
+    if (type == 1) {
+        console.log("test");
+        document.getElementById("2").value = Math.round(((val*1.8)+32)*100)/100 // Ou var.toFixed(2);
+        document.getElementById("3").value = Math.round((val+273.15)*100)/100
+    } else if (type == 2) {
+        document.getElementById("1").value = Math.round(((val-32)/1.8)*100)/100
+        document.getElementById("3").value = Math.round((((val-32)/1.8)+273.15)*100)/100
+    } else if (type == 3) {
+        document.getElementById("1").value = Math.round((val-273.15)*100)/100
+        document.getElementById("2").value = Math.round((((val-273.15)*1.8)+32)*100)/100
+    }
+}
+
+function conversionTemperature() {
+    var choix = 1;
+    var valeur = 0;
+    while(parseInt(choix) != 0) {
+        choix = prompt("Indiquez votre choix :");
+
+        if (parseInt(choix) == 1) {
+            valeur = prompt("Indiquez la tempÃ©rature en Â°C :")
+            alert(parseInt(valeur)+"Â°C = "+calcul(parseInt(valeur), parseInt(choix))+"Â°F");
+        } else if (parseInt(choix) == 2) {
+            valeur = prompt("Indiquez la tempÃ©rature en Â°C :")
+            alert(parseInt(valeur)+"Â°C = "+calcul(parseInt(valeur), parseInt(choix))+"Â°K");
+        } else if (parseInt(choix) == 3) {
+            valeur = prompt("Indiquez la tempÃ©rature en Â°F :")
+            alert(parseInt(valeur)+"Â°F = "+calcul(parseInt(valeur), parseInt(choix))+"Â°C");
+        } else if (parseInt(choix) == 4) {
+            valeur = prompt("Indiquez la tempÃ©rature en Â°F :")
+            alert(parseInt(valeur)+"Â°F = "+calcul(parseInt(valeur), parseInt(choix))+"Â°K");
+        } else if (parseInt(choix) == 5) {
+            valeur = prompt("Indiquez la tempÃ©rature en Â°K :")
+            alert(parseInt(valeur)+"Â°K = "+calcul(parseInt(valeur), parseInt(choix))+"Â°C");
+        } else if (parseInt(choix) == 6) {
+            valeur = prompt("Indiquez la tempÃ©rature en Â°K :")
+            alert(parseInt(valeur)+"Â°K = "+calcul(parseInt(valeur), parseInt(choix))+"Â°F");
+        } else if (parseInt(choix) == 0) {
+            alert("Tu veux sortir ?");
+            alert("Mais pourquoi ?");
+            alert("Tu n'aime pas les alertes ?");
+            alert("C'est triste ?");
+            alert("Mais comment faire ?\n Pioupiou appel poulet.");
+            alert("Une petite loop ?");
+            for (i = 0; i < 4; i++)
+                alert("Clic");
+            for (i = 0; i < 10; i++)
+                alert("CLIC");
+            alert("CLIIIICCCCCC");
+            alert("Trop de clic tue le clic non ?")
+            alert("Encore un peu");
+            alert("4");
+            alert("3");
+            alert("2");
+            alert("1");
+            alert("Ou pas :(");
+            alert("Encore une boucle ?")
+            for (i = 0; i < 10; i++)
+                alert("Et de " + i);
+            alert("ATTENTION");
+            alert("Plus d'alerte apres cette sÃ©rie d'Ã©xo promis");
+            alert("A moins que ... y'a eu que 42 ;) alertes");
+
+        }
+    }
+}
+
+/*
+0 - Fin du programme
+1 - De Celsius vers Fahrenheit
+2 - De Celsius vers Kelvin
+3 - De Fahrenheit vers Celsius
+4 - De Fahrenheit vers Kelvin
+5 - De Kelvin vers Celsius
+6 - De Kelvin vers Fahrenheit
+*/
+            </script>
+    </body>
 </html>
