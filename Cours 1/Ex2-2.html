@@ -1,17 +1,29 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Exercice 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="/be_code/javascript/assets/js/2eme/ex02.js"></script>
+    </head>
+    <body onload="calcul_rayon();">
+        <button id="surface" name="surface" onclick="resultat();">Voir le résultat</button>
+        <p>Rayon : <span id="retour"></span></p>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-
-<body>
-       <script>
+        <script>
         
-    </script>
-</body>
+        var rayon;
 
+function calcul_rayon() {
+    rayon = prompt("Tapez un rayon : ");
+    rayon = Math.PI * (rayon * rayon);
+}
+
+function resultat() {
+    document.getElementById("retour").innerHTML = rayon;
+}
+</script>
+    </body>
 </html>

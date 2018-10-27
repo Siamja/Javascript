@@ -1,16 +1,32 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <script src="script.js"></script>
 
-    <script>
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Exercice_6</title>
+            <meta charset="UTF-8">
+        </head>
+        <body>
+            <form>
+                <p>Exercice 6</p>
+                <label for="premier_nombre">Premier nombre : </label><input type="text" id="ex6_premier_nombre" name="ex6_premier_nombre"/><br/>
+                <label for="deuxieme_nombre">Deuxième nombre : </label><input type="text" id="ex6_deuxieme_nombre" name="ex6_deuxieme_nombre"/><br/>
+                <button id="valider" name="valider" onclick="ex6();">Valider</button>
+                <p>Reste : <span id="ex6_retour"></span></p>
+            </form>
+
+            <script>
+                function ex6() {
+                    document.getElementById("ex6_retour").innerHTML = ex6_reste(document.getElementById("ex6_premier_nombre").value, document.getElementById("ex6_deuxieme_nombre").value);
+                }
+
+                function ex6_reste(var1, var2) {
+    return var1 % var2;
+}//solution à trouver 
+                    </script>
+
+                    
+
+        </body>
+    </html>
 
 
-    </script>
-    
-</head>
-<body>
-    
-</body>
-</html>

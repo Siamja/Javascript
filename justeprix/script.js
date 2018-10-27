@@ -8,15 +8,15 @@ let finish = getRandomArbitrary(20, 80);
 console.log(finish);
        
     justeprix = () => {
-        let essai = prompt("Juste Prix DONNE UN NOMBRE");
+        let essai = prompt("Allez donne un nombre frère");
         for(let i=1; i < 50; i++) {
         if (essai < finish) {
             alert("C'est plus");
-            essai = prompt("Juste Prix DONNE UN NOMBRE");
+            essai = prompt("Allez donne un nombre frère");
           }
         else if (finish < essai) {
             alert("C'est moins");
-            essai = prompt("Juste Prix DONNE UN NOMBRE");
+            essai = prompt("Allez donne un nombre frère");
         }
 
         else if (finish == essai) {
@@ -25,7 +25,7 @@ console.log(finish);
         }
         else {
             let message4 = alert("TG");
-            essai = prompt("DONNE UN NOMBRE PAS UN MOT!");
+            essai = prompt("DONNE UN NOMBRE PAS UN MOT BORDEL !");
         }
     }
 }    
