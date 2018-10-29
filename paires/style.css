@@ -419,10 +419,10 @@ body {
   backface-visibility: hidden; }
 
 .card__face--front {
-  background: red; }
+  background-image: url("logo_juve.png"); }
 
 .card__face--back {
-  background: blue;
+  background: white;
   transform: rotateY(180deg); }
 
 img {

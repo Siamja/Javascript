@@ -1,6 +1,4 @@
-let liste = ['Abradolf_Lincler_Angry.png', 'Arthricia_end_HQ.png', 'Beth_Smith.png', 'BirdpersonTransparent.png', 'Doofus_Rick.png', 'Fart.jpg', 'Gearheadtransparent.png', 
-'Jerry_Smith.png', 'Jessica.png', 'Little_Dipper.jpg', 'MeeseeksHQ.png', 'Morty_Smith.png', 'Mr_poopy_butthole.png',
-'MrGoldenfold.png', 'Principal_Vagina.png', 'Rick_Sanchez.png', 'Squanchy.png', 'Summer_Smith.png']
+let liste = ["Alex_Sandro.png", "Barzagli.png", "Benatia.png", "Bentancur.png", "Bernardeschi.png", "Cancelo.png", "Chiellini.png", "Cuadrado.png", "De_Sciglio.png", "Douglas_Costa.png", "Dybala.png", "Khedira.png", "Mandzukic.png", "Matuidi.png", "Perin.png", "Pjanic.png", "Ronaldo.png", "Rugani.png"]
 let cc = 300
 let timer1, timer2
 let findCount = 0
@@ -90,8 +88,8 @@ let drawCard = () => {
             col_card_b.setAttribute("id", id)
 
             let url = document.createElement('img')
-            url.setAttribute("id", "img"+id)
-            url.src = 'assets/img/'+list[id]
+            url.setAttribute("id", "images"+id)
+            url.src = '/images/'+list[id]
             url.alt = list[id]
 
             col_card.appendChild(col_card_f)
