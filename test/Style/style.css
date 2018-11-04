@@ -1,0 +1,86 @@
+body {
+    background-color: #381040;
+    height: 500px;
+    
+}
+
+.main-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+
+}
+
+#clic {
+    background: no-repeat;
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+    margin : 25px;
+    font-size: 1.5em;
+    border: none;
+    border-radius : 50%;
+    box-shadow: 6px 6px 20px 4px rgba(0, 0, 0, 0.3);
+    color: white;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s;
+    
+}
+#clic:hover {
+    box-shadow: 6px 6px 25px 4px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
+}
+
+#clic:active {
+    box-shadow: 6px 6px 18px 2px rgba(0, 0, 0, 0.23);
+    transform: scale(0.98);
+}
+
+#affichage {
+    margin: 25px;
+    font-size: 2em;
+    color: #ffb300;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 25px;
+    font-size: 1.5em;
+    font-family: monospace;
+    padding: 10px;
+    border: none;
+    border-radius : 5px;
+    box-shadow: 6px 6px 20px 4px rgba(0, 0, 0, 0.3);
+    background-color: #9c27b0;
+    color: #ffb300;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s;
+    width: 250px;
+    height: 50px;
+}
+
+button:hover {
+    box-shadow: 6px 6px 25px 4px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
+}
+
+button:active {
+    box-shadow: 6px 6px 18px 2px rgba(0, 0, 0, 0.23);
+    transform: scale(0.98);
+}
+
+button:disabled {
+    background-color: grey;
+    color: white;
+    transform: none;
+    box-shadow: none;
+    cursor: auto;
+}
